@@ -14,7 +14,8 @@ set(CMAKE_DEBUG_POSTFIX "_d")
 set(MZLIB "_MZ_")
 
 set(MZ_PATTERNS
-    pimpl)
+    pimpl
+    singleton)
 
 foreach(PATTERN ${MZ_PATTERNS})
     add_library(${MZLIB}${PATTERN} src/${PATTERN}/${PATTERN}.cpp)
